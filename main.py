@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, session, redirect
+from flask import Flask, render_template, request, session, redirect, flash
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from werkzeug.utils import secure_filename
@@ -54,6 +54,7 @@ def file_upload():
             f = request.files['file_uploading']
             f.save(os.path.join(app.config['UPLOAD_LOCATION'], secure_filename(f.filename)))
     # After successfully uploading file, redirecting to admin dashboard
+    flash("File uploaded successfully","success")
     return redirect('/dashboard')
 
 
@@ -73,6 +74,7 @@ def dashboard():
             session['user'] = uname
             # fetching all the posts form database
             posts = Posts.query.all()
+            flash("Loged in successfully","success")
             return render_template('dashboard.html', params=params, posts=posts)
     # IF credentials are wrong, then re-attempt
     return render_template('login.html', params=params, year=datetime.now().year)
@@ -102,6 +104,7 @@ def edit(id):
                              date=datetime.now())
                 db.session.add(post)
                 db.session.commit()
+                flash("Post Added Successfully","success")
                 return redirect('/dashboard')
             # To update posts
             else:
@@ -113,6 +116,7 @@ def edit(id):
                 posts.content = content
                 posts.date = datetime.now()
                 db.session.commit()
+                flash("Post updated Successfully","success")
                 # redirecting to admin dashboard after updating post
                 return redirect('/dashboard')
 
@@ -129,10 +133,12 @@ def delete(post_id):
             post = Posts.query.get_or_404(post_id)
             db.session.delete(post)
             db.session.commit()
+            flash("Post deleted Successfully","success")
             return redirect('/dashboard')
         except ValueError:
             return "Error deleting this post..."
-    return "Post not deleted"
+    flash("Post not deleted","warning")
+    return redirect('/dashboard')
 
 
 # endpoint for blog's home page
@@ -191,6 +197,7 @@ def contact():
         entry = Contacts(name=name, email=email, phone=phone, msg=msg, date=datetime.now())
         db.session.add(entry)
         db.session.commit()
+        flash("Thanks for contacting us, We will be back to you soon!!!","success")
         # Sending email code to be used if required (not used yet)
     return render_template('contact.html', params=params, year=datetime.now().year)
 
