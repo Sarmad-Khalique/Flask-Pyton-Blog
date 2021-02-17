@@ -1,0 +1,16 @@
+{
+  "Parameters": {
+    "local_server": "True",
+    "local_URI": "mysql://root:@localhost/blog",
+    "prod_URI": "URI for your production database",
+    "BLog_name": "Blog_name",
+    "about_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolor nam quo fugit fugiat repellendus accusantium quidem soluta ullam deserunt. Cumque amet beatae unde aperiam ullam rem dignissimos repudiandae ad.\nPraesentium dignissimos perspiciatis doloremque iure necessitatibus alias non dolore consectetur, cum hic, quod eos fugit delectus unde corrupti reprehenderit nihil vero aspernatur officia eum amet, aperiam cupiditate voluptas suscipit! Perferendis.\nQuaerat eum explicabo quam voluptatibus cupiditate quo ullam ipsa necessitatibus omnis, facilis obcaecati vero non doloremque totam. Nulla rerum iusto vero nisi at error eveniet beatae odio neque, dignissimos consequatur!\nSoluta vitae quod unde doloremque libero quaerat eligendi rerum culpa suscipit quibusdam, in vero corporis itaque placeat quia ad, numquam amet maiores necessitatibus esse? Repudiandae libero vero impedit reiciendis nihil!\nPraesentium, voluptas facilis doloremque perferendis beatae ipsum accusantium sit, pariatur quis eligendi perspiciatis tempore. Voluptatem eius repellat voluptatum consectetur voluptates tempore assumenda id, dolorem iusto, dolore doloremque natus veniam qui!\nOdit impedit illo sit minima est nostrum tempore numquam, modi suscipit molestias libero rem eaque repellendus neque soluta quaerat, accusantium, ratione asperiores officia? In id sapiente impedit eius non tempora!\nQuo nulla itaque ad delectus modi ea veniam dolorum ducimus eligendi provident, cupiditate eius earum illum aspernatur ipsam deserunt odit aperiam eveniet harum expedita architecto totam possimus quia. Sit, non?\nNobis temporibus id quaerat porro dolores tempore corporis numquam quidem maxime eveniet iusto fuga modi earum cum, ut possimus distinctio perspiciatis ex repellendus reprehenderit, nesciunt sit? Sed, perspiciatis! Nihil, neque?\nQuasi unde quos perspiciatis et qui minima ex quod quas nemo, dignissimos delectus maxime quae cumque alias? Hic, nulla. Iste sed eveniet eius commodi ab distinctio qui aspernatur nemo aliquam.\nVoluptatibus, eveniet dolor sint sit, quam dolores veniam debitis iure inventore saepe animi, eligendi corrupti dolore cupiditate dolorem reiciendis hic similique mollitia harum quis. Modi ipsam numquam aut veritatis pariatur!\nNisi quas porro debitis magni quae neque quis quisquam, impedit eaque error est voluptas sapiente asperiores culpa sit quod voluptates numquam cupiditate ut delectus eius doloremque? Beatae quisquam obcaecati tempore?\nAtque sequi totam, voluptatibus iusto aut corporis possimus harum autem blanditiis repellendus voluptates. Delectus ab nulla aliquam eaque facilis facere, deleniti omnis a voluptates debitis. Eveniet expedita veniam pariatur culpa!",
+    "no_of_posts": 3,
+    "twitter-link": "#",
+    "facebook-link": "#",
+    "github-link": "#",
+    "admin-user": "admin",
+    "admin-pass": "admin",
+    "file_upload_location": "file upload location"
+  }
+}
